@@ -1,0 +1,6 @@
+Domains:
+person{Anna, Bob, Chris, Daniel, Edward, Frank, Gary, Helen, Ivan, John, Katherine, Lars, Michael, Nick}
+Predicates:
+Friends(person,person)
+Smokes(person)
+Cancer(person)

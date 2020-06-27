@@ -1,0 +1,7 @@
+Predicates:
+workedUnder(person,person)
+movie(film,person)
+director(person)
+male(person)
+genre(person,type)
+actor(person)
