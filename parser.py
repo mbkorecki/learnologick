@@ -39,7 +39,7 @@ class Parser(object):
         predSets = {}
         for key in predicates.keys():
             if len(predicates[key]) == 1:
-                predSets.update({key : set()})
+                predSets.update({key :[set()]})
             elif len(predicates[key]) == 2:
                 predSets.update({key : [set(), set()]})
 
@@ -52,7 +52,7 @@ class Parser(object):
             predName = line[0:line.find('(')]
             if len(predicates[predName]) == 1:
                 const = line[line.find('(')+1:line.find(')')]
-                predSets[predName].add(const)
+                predSets[predName][0].add(const)
             elif len(predicates[predName]) == 2:
                 consts = line[line.find('(')+1:line.find(')')].replace(" ", "").split(",")
                 predSets[predName][0].add(consts[0])
